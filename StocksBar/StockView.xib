@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StockView">
+            <connections>
+                <outlet property="box" destination="BCC-r5-V8p" id="wyO-Uc-HL6"/>
+                <outlet property="code" destination="2Th-QW-RyR" id="GiX-pM-axg"/>
+                <outlet property="name" destination="Qki-x9-Mpc" id="auu-8B-wsz"/>
+                <outlet property="price" destination="4dp-9r-OGN" id="0oK-VI-CsU"/>
+                <outlet property="view" destination="c22-O7-iKe" id="3fV-H7-6bh"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="StockView" id="c22-O7-iKe" customClass="StockView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" titlePosition="noTitle" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-r5-V8p">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" ambiguous="YES" id="cEu-S6-AW6">
+                        <rect key="frame" x="1" y="1" width="298" height="38"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField focusRingType="exterior" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" preferredMaxLayoutWidth="54" translatesAutoresizingMaskIntoConstraints="NO" id="2Th-QW-RyR">
+                                <rect key="frame" x="18" y="11" width="79" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="3rp-nF-8xe"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" continuous="YES" sendsActionOnEndEditing="YES" focusRingType="exterior" title="输入代码" id="MCs-Pl-IyG">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="onCodeEndEdit:" target="-2" id="Yyp-Gu-yPM"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qki-x9-Mpc">
+                                <rect key="frame" x="124" y="11" width="69" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="aUU-b4-uGb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dp-9r-OGN">
+                                <rect key="frame" x="203" y="11" width="61" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Apf-0F-UuK"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="未知" id="nRc-Xb-UKI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2Th-QW-RyR" firstAttribute="baseline" secondItem="Qki-x9-Mpc" secondAttribute="baseline" id="7Gt-8e-yzE"/>
+                            <constraint firstItem="2Th-QW-RyR" firstAttribute="leading" secondItem="cEu-S6-AW6" secondAttribute="leading" constant="20" symbolic="YES" id="Cez-tj-wxt"/>
+                            <constraint firstItem="Qki-x9-Mpc" firstAttribute="leading" secondItem="2Th-QW-RyR" secondAttribute="trailing" constant="31" id="FR7-fe-19B"/>
+                            <constraint firstItem="4dp-9r-OGN" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Qki-x9-Mpc" secondAttribute="trailing" constant="45" id="UP6-HW-eDt"/>
+                            <constraint firstAttribute="trailing" secondItem="4dp-9r-OGN" secondAttribute="trailing" constant="12" id="czW-3q-ha6"/>
+                            <constraint firstItem="Qki-x9-Mpc" firstAttribute="baseline" secondItem="4dp-9r-OGN" secondAttribute="baseline" id="wlk-No-SbW"/>
+                            <constraint firstItem="2Th-QW-RyR" firstAttribute="centerY" secondItem="cEu-S6-AW6" secondAttribute="centerY" id="wrp-tH-tqY"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

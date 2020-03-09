@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		882E6FC52407B33800B3D597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FC42407B33800B3D597 /* AppDelegate.m */; };
-		882E6FC82407B33800B3D597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FC72407B33800B3D597 /* ViewController.m */; };
 		882E6FCA2407B33C00B3D597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882E6FC92407B33C00B3D597 /* Assets.xcassets */; };
 		882E6FCD2407B33C00B3D597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882E6FCB2407B33C00B3D597 /* Main.storyboard */; };
 		882E6FD02407B33C00B3D597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FCF2407B33C00B3D597 /* main.m */; };
 		882E6FDB2407B33C00B3D597 /* StocksBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FDA2407B33C00B3D597 /* StocksBarTests.m */; };
 		882E6FE62407B33C00B3D597 /* StocksBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FE52407B33C00B3D597 /* StocksBarUITests.m */; };
+		882E6FF62407BBF700B3D597 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FF42407BBF700B3D597 /* PopViewController.m */; };
+		882E6FF72407BBF700B3D597 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882E6FF52407BBF700B3D597 /* PopViewController.xib */; };
+		882E70012407F2D500B3D597 /* RFOverlayScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E6FFF2407F2D500B3D597 /* RFOverlayScroller.m */; };
+		882E70022407F2D500B3D597 /* RFOverlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882E70002407F2D500B3D597 /* RFOverlayScrollView.m */; };
+		887BDFB3240E7DE10084EBD1 /* StockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887BDFB2240E7DE10084EBD1 /* StockView.xib */; };
+		887BDFB6240E7EF00084EBD1 /* StockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 887BDFB5240E7EF00084EBD1 /* StockView.m */; };
+		887BDFB9240FE4D80084EBD1 /* StockData.m in Sources */ = {isa = PBXBuildFile; fileRef = 887BDFB8240FE4D80084EBD1 /* StockData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +43,6 @@
 		882E6FC02407B33800B3D597 /* StocksBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882E6FC32407B33800B3D597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		882E6FC42407B33800B3D597 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		882E6FC62407B33800B3D597 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		882E6FC72407B33800B3D597 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		882E6FC92407B33C00B3D597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882E6FCC2407B33C00B3D597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882E6FCE2407B33C00B3D597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +54,18 @@
 		882E6FE12407B33C00B3D597 /* StocksBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882E6FE52407B33C00B3D597 /* StocksBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StocksBarUITests.m; sourceTree = "<group>"; };
 		882E6FE72407B33C00B3D597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882E6FF32407BBF700B3D597 /* PopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		882E6FF42407BBF700B3D597 /* PopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		882E6FF52407BBF700B3D597 /* PopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
+		882E6FFD2407F2D500B3D597 /* RFOverlayScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOverlayScroller.h; sourceTree = "<group>"; };
+		882E6FFE2407F2D500B3D597 /* RFOverlayScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOverlayScrollView.h; sourceTree = "<group>"; };
+		882E6FFF2407F2D500B3D597 /* RFOverlayScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOverlayScroller.m; sourceTree = "<group>"; };
+		882E70002407F2D500B3D597 /* RFOverlayScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOverlayScrollView.m; sourceTree = "<group>"; };
+		887BDFB2240E7DE10084EBD1 /* StockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockView.xib; sourceTree = "<group>"; };
+		887BDFB4240E7EF00084EBD1 /* StockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockView.h; sourceTree = "<group>"; };
+		887BDFB5240E7EF00084EBD1 /* StockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockView.m; sourceTree = "<group>"; };
+		887BDFB7240FE4D80084EBD1 /* StockData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockData.h; sourceTree = "<group>"; };
+		887BDFB8240FE4D80084EBD1 /* StockData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +116,18 @@
 		882E6FC22407B33800B3D597 /* StocksBar */ = {
 			isa = PBXGroup;
 			children = (
+				882E6FFC2407F2D500B3D597 /* RFOverlayScrollView */,
 				882E6FC32407B33800B3D597 /* AppDelegate.h */,
 				882E6FC42407B33800B3D597 /* AppDelegate.m */,
-				882E6FC62407B33800B3D597 /* ViewController.h */,
-				882E6FC72407B33800B3D597 /* ViewController.m */,
+				882E6FF32407BBF700B3D597 /* PopViewController.h */,
+				882E6FF42407BBF700B3D597 /* PopViewController.m */,
+				887BDFB4240E7EF00084EBD1 /* StockView.h */,
+				887BDFB5240E7EF00084EBD1 /* StockView.m */,
+				887BDFB7240FE4D80084EBD1 /* StockData.h */,
+				887BDFB8240FE4D80084EBD1 /* StockData.m */,
 				882E6FC92407B33C00B3D597 /* Assets.xcassets */,
+				882E6FF52407BBF700B3D597 /* PopViewController.xib */,
+				887BDFB2240E7DE10084EBD1 /* StockView.xib */,
 				882E6FCB2407B33C00B3D597 /* Main.storyboard */,
 				882E6FCE2407B33C00B3D597 /* Info.plist */,
 				882E6FCF2407B33C00B3D597 /* main.m */,
@@ -129,6 +152,17 @@
 				882E6FE72407B33C00B3D597 /* Info.plist */,
 			);
 			path = StocksBarUITests;
+			sourceTree = "<group>";
+		};
+		882E6FFC2407F2D500B3D597 /* RFOverlayScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				882E6FFD2407F2D500B3D597 /* RFOverlayScroller.h */,
+				882E6FFE2407F2D500B3D597 /* RFOverlayScrollView.h */,
+				882E6FFF2407F2D500B3D597 /* RFOverlayScroller.m */,
+				882E70002407F2D500B3D597 /* RFOverlayScrollView.m */,
+			);
+			path = RFOverlayScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882E6FF72407BBF700B3D597 /* PopViewController.xib in Resources */,
+				887BDFB3240E7DE10084EBD1 /* StockView.xib in Resources */,
 				882E6FCA2407B33C00B3D597 /* Assets.xcassets in Resources */,
 				882E6FCD2407B33C00B3D597 /* Main.storyboard in Resources */,
 			);
@@ -260,9 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882E6FC82407B33800B3D597 /* ViewController.m in Sources */,
+				882E6FF62407BBF700B3D597 /* PopViewController.m in Sources */,
+				887BDFB9240FE4D80084EBD1 /* StockData.m in Sources */,
+				882E70022407F2D500B3D597 /* RFOverlayScrollView.m in Sources */,
 				882E6FD02407B33C00B3D597 /* main.m in Sources */,
+				882E70012407F2D500B3D597 /* RFOverlayScroller.m in Sources */,
 				882E6FC52407B33800B3D597 /* AppDelegate.m in Sources */,
+				887BDFB6240E7EF00084EBD1 /* StockView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +463,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StocksBar/StocksBar.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = W3N49X5L6E;
+				DEVELOPMENT_TEAM = C52K4Y5TUA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StocksBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,9 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StocksBar/StocksBar.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = W3N49X5L6E;
+				DEVELOPMENT_TEAM = C52K4Y5TUA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StocksBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

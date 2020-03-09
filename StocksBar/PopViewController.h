@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PopViewController.h
 //  StocksBar
 //
 //  Created by dangjiahe on 2020/2/27.
@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PopViewController : NSViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
